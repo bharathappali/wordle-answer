@@ -34,7 +34,7 @@ while True:
     wordle_id = str(wordle_id).strip()
 
     if not wordle_id.isnumeric():
-        if str(wordle_id).strip().lower() == EXIT:
+        if wordle_id.lower() == EXIT:
             thankyou()
         else:
             usage()
